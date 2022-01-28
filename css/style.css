@@ -1,0 +1,70 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    /*border: 1px solid red;*/
+}
+body{
+    position: relative;
+}
+.scoreBox{
+    font-family: arial;
+    color: darkgreen;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    width: 200px;
+    height: 60px;
+    background: hsla(0deg,50%,100%,0.1);
+    backdrop-filter: blur(5px);
+    border-left: 1px solid hsla(0deg,50%,100%,0.5);
+    border-top: 1px solid hsla(0deg,50%,100%,0.5);
+    border-radius: 7px;
+    box-shadow: 20px 20px 50px hsla(0deg,50%,0%,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+}
+.body{
+    background:url(../images/snake-161424.png);
+    background-color: hsla(188deg,75%,46%,1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body #board{
+    background: hsla(0deg,50%,100%,0.1);
+    backdrop-filter: blur(5px);
+    width: 90vmin;
+    height: 92vmin;
+    border-left: 1px solid hsla(0deg,50%,100%,0.5);
+    border-top: 1px solid hsla(0deg,50%,100%,0.5);
+    border-radius: 7px;
+    box-shadow: 20px 20px 50px hsla(0deg,50%,0%,0.5);
+
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background-color: red;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.snake{
+    background-color: purple;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.food{
+    background-color: yellow;
+    border-radius: 50%;
+}
